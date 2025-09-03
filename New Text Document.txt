@@ -1,0 +1,280 @@
+✅ Frontend Developer Learning Checklist
+1. 🌐 Web Basics (Foundations)
+HTML
+
+ Semantic HTML tags
+
+ Forms and inputs
+
+ Tables and lists
+
+ Accessibility (ARIA roles, alt attributes)
+
+ SEO-friendly structure
+
+CSS
+
+ Box Model
+
+ Display types (block, inline, inline-block)
+
+ Positioning (static, relative, absolute, fixed, sticky)
+
+ Flexbox
+
+ Grid layout
+
+ Responsive design (media queries)
+
+ Pseudo-classes and pseudo-elements
+
+ Animations and transitions
+
+ Custom properties (CSS variables)
+
+ Preprocessors (optional: SASS/SCSS)
+
+JavaScript (Vanilla JS)
+
+ Variables (var, let, const)
+
+ Data types and type coercion
+
+ Functions and arrow functions
+
+ Conditionals and loops
+
+ Arrays and objects
+
+ Array methods (map, filter, reduce, forEach)
+
+ DOM manipulation
+
+ Event handling
+
+ Timers (setTimeout, setInterval)
+
+ Fetch API (GET/POST requests)
+
+ ES6+ features (destructuring, spread/rest, modules, etc.)
+
+2. ⚛️ JavaScript Framework (React.js)
+React Core
+
+ JSX syntax
+
+ Functional components
+
+ Props and state
+
+ useState
+
+ useEffect
+
+ useRef
+
+ Conditional rendering
+
+ Lists and keys
+
+ Form handling (controlled components)
+
+ Lifting state up
+
+Advanced React
+
+ React Router (for SPA navigation)
+
+ useContext
+
+ useReducer
+
+ Custom hooks
+
+ Memoization (React.memo, useMemo, useCallback)
+
+ Error boundaries
+
+ Lazy loading and Suspense
+
+ Code splitting
+
+3. 🔄 State Management
+
+ useState (local component state)
+
+ Context API
+
+ Redux (Redux Toolkit)
+
+ Zustand / Jotai / Recoil (simpler alternatives)
+
+ useReducer (for complex local state)
+
+ Understanding immutable updates
+
+4. 🧰 Frontend Tools & Workflow
+Tools
+
+ VS Code and useful extensions
+
+ Node.js and npm/yarn
+
+ Git & GitHub
+
+ Terminal/CLI basics
+
+ Browser DevTools
+
+ Linting (ESLint)
+
+ Code formatting (Prettier)
+
+Package & Module Management
+
+ Installing packages with npm or yarn
+
+ import/export syntax
+
+ Local vs global dependencies
+
+ Scripts in package.json
+
+5. 🧪 Testing
+
+ Unit testing (Jest)
+
+ Component testing (React Testing Library)
+
+ End-to-end testing (Cypress / Playwright)
+
+ Snapshot testing
+
+ Mocking API calls
+
+6. 🌍 APIs & Data Handling
+
+ REST API basics (GET, POST, PUT, DELETE)
+
+ Working with fetch or axios
+
+ JSON data handling
+
+ Async/await
+
+ Error handling
+
+ Loading states
+
+ API authentication (tokens, headers)
+
+7. 🎨 Styling Tools & Frameworks
+
+ CSS Modules
+
+ Tailwind CSS
+
+ Bootstrap
+
+ Styled-components (CSS-in-JS)
+
+ Emotion (CSS-in-JS)
+
+8. 🚀 Deployment & Hosting
+
+ Build a React app (npm run build)
+
+ Deploy on:
+
+ Netlify
+
+ Vercel
+
+ GitHub Pages
+
+ Environment variables (.env)
+
+ Basic CI/CD awareness
+
+9. 🔐 Security & Performance
+
+ HTTPS vs HTTP
+
+ CORS (Cross-Origin Resource Sharing)
+
+ XSS prevention
+
+ CSRF awareness
+
+ Lazy loading
+
+ Code splitting
+
+ Asset optimization (images, fonts, etc.)
+
+10. 📱 Responsive & Mobile Design
+
+ Mobile-first design
+
+ Media queries
+
+ Viewport units (vw, vh)
+
+ Touch events and gestures
+
+ Cross-browser testing
+
+11. 🧱 Component Architecture & Design Patterns
+
+ Atomic Design
+
+ Container vs Presentational Components
+
+ Component reusability
+
+ Separation of concerns
+
+ Folder structure best practices
+
+12. 💡 Soft Skills & Practices
+
+ Problem-solving
+
+ Debugging
+
+ Writing clean, readable code
+
+ Time management
+
+ Communication (especially for team projects)
+
+13. 📁 Optional Advanced Topics
+
+ TypeScript (strongly typed JavaScript)
+
+ Next.js (React framework for SSR & SSG)
+
+ WebSockets (real-time updates)
+
+ GraphQL
+
+ Progressive Web Apps (PWA)
+
+ Service Workers
+
+ LocalStorage / SessionStorage
+
+ Web Accessibility (a11y)
+
+ Internationalization (i18n)
+
+✅ Bonus: Project Ideas to Practice
+Difficulty	Project
+Beginner	Todo App
+Beginner	Weather App (API)
+Beginner	Calculator
+Intermediate	Blog with Markdown
+Intermediate	E-commerce cart
+Intermediate	Movie Search App (API)
+Advanced	Chat App (WebSocket)
+Advanced	Portfolio with animations
