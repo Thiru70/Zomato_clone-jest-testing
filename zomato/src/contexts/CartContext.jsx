@@ -48,3 +48,6 @@ export function CartProvider({ children }) {
 export function useCart() {
   return useContext(CartContext);
 }
+
+// Export CartContext so tests can use it!
+export { CartContext };

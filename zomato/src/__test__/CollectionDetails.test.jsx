@@ -1,8 +1,10 @@
+import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import CollectionDetails from './CollectionDetails';
+import CollectionDetails from '../components/CollectionDetails';
 import { CartContext } from '../contexts/CartContext';
+
 
 const collections = [
   {

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaShoppingCart, FaBell } from 'react-icons/fa';
 import { useCart } from '../contexts/CartContext';
 
-export const NavBar = ({foodSuggestion}) => {
+export const NavBar = ({ foodSuggestion }) => {
   const { cartItems } = useCart();
   const [username, setUsername] = useState(null);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -46,19 +46,18 @@ export const NavBar = ({foodSuggestion}) => {
             <div className="absolute right-0 z-10 w-64 p-4 mt-2 text-sm bg-white border border-gray-200 rounded-md shadow-lg">
               <h4 className="mb-2 font-semibold text-gray-800">Suggestions</h4>
               {foodSuggestion ? (
-              <ul className="space-y-1 text-gray-600">
-                <li>🍽️ {foodSuggestion}</li>
-              </ul>
-            ) : (
-              <p className="italic text-gray-500">No suggestions available.</p>
-            )}
-
+                <ul className="space-y-1 text-gray-600">
+                  <li>🍽️ {foodSuggestion}</li>
+                </ul>
+              ) : (
+                <p className="italic text-gray-500">No suggestions available.</p>
+              )}
             </div>
           )}
         </div>
 
         {/* Cart Icon */}
-        <Link to="/cart" className="relative">
+        <Link to="/cart" className="relative" aria-label="Cart">
           <FaShoppingCart className="text-2xl" />
           {cartItems.length > 0 && (
             <span className="absolute flex items-center justify-center w-5 h-5 text-xs text-white bg-red-500 rounded-full -top-2 -right-2">

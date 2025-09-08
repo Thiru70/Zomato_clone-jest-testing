@@ -15,8 +15,9 @@ export const SignUp = () => {
     e.preventDefault();
 
     if (password !== confirmPassword) {
-      setError("Passwords do not match");
-      setModalMessage("Passwords do not match");
+      const msg = "Passwords do not match";
+      setError(msg);
+      setModalMessage(msg);
       setModalVisible(true);
       return;
     }
@@ -32,6 +33,7 @@ export const SignUp = () => {
     const data = await res.json();
 
     if (res.status === 200) {
+      setError(''); // clear any previous errors
       setModalMessage('Signup successful');
       setModalVisible(true);
       setTimeout(() => {
@@ -57,7 +59,7 @@ export const SignUp = () => {
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
               Create a new account
             </h1>
-            <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
+            <form className="space-y-4 md:space-y-6" onSubmit={handleSubmit} noValidate>
               <div>
                 <label htmlFor="username" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
                 <input
@@ -106,7 +108,14 @@ export const SignUp = () => {
                   required
                 />
               </div>
-              {error && <p className="text-sm text-red-500">{error}</p>}
+
+              {/* Inline error message for accessibility & testing */}
+              {error && (
+                <p role="alert" className="text-sm text-red-500">
+                  {error}
+                </p>
+              )}
+
               <button
                 type="submit"
                 className="w-full text-white bg-blue-600 hover:bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5"

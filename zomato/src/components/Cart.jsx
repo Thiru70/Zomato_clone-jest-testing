@@ -1,7 +1,7 @@
 // src/components/Cart.jsx
 import React from 'react';
 import { useCart } from '../contexts/CartContext';
-
+import { CartContext } from '../contexts/CartContext';
 function Cart() {
   const { cartItems, removeFromCart, updateQuantity } = useCart();
 

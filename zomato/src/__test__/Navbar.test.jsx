@@ -1,7 +1,8 @@
+import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { NavBar } from './NavBar';
+import { NavBar } from '../components/NavBar';
 import { CartContext } from '../contexts/CartContext';
 
 const mockCart = {

@@ -1,7 +1,10 @@
+import '@testing-library/jest-dom';
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import Cart from './Cart';
+import Cart from '../components/Cart';
 import { CartContext } from '../contexts/CartContext';
+
+
 
 const mockCartItems = [
   {
